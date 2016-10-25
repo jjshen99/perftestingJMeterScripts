@@ -25,17 +25,17 @@
           </elementProp>
           <elementProp name="host" elementType="Argument">
             <stringProp name="Argument.name">host</stringProp>
-            <stringProp name="Argument.value">${__P(sncHost,10.11.94.14)}</stringProp>
+            <stringProp name="Argument.value">${__P(sncHost,perftesting1.service-now.com)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="port" elementType="Argument">
             <stringProp name="Argument.name">port</stringProp>
-            <stringProp name="Argument.value">${__P(sncPort,16001)}</stringProp>
+            <stringProp name="Argument.value">${__P(sncPort,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="numberOfUsers" elementType="Argument">
             <stringProp name="Argument.name">numberOfUsers</stringProp>
-            <stringProp name="Argument.value">${__P(sncNumberOfUsers,1)}</stringProp>
+            <stringProp name="Argument.value">${__P(sncNumberOfUsers,2)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="startFrom" elementType="Argument">
@@ -45,7 +45,7 @@
           </elementProp>
           <elementProp name="protocol" elementType="Argument">
             <stringProp name="Argument.name">protocol</stringProp>
-            <stringProp name="Argument.value">${__P(sncProtocol,http)}</stringProp>
+            <stringProp name="Argument.value">${__P(sncProtocol,https)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="rampUp" elementType="Argument">
@@ -70,7 +70,7 @@
           </elementProp>
           <elementProp name="task_sysid" elementType="Argument">
             <stringProp name="Argument.name">task_sysid</stringProp>
-            <stringProp name="Argument.value">${__P(sncTaskSysid, 7db1f2971112220092c03af6f4e9f6b1)}</stringProp>
+            <stringProp name="Argument.value">${__P(sncTaskSysid, d30c7a61db112200aca753a0cf961980)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -2206,8 +2206,16 @@ if (gr.next()) {&#xd;
         <boolProp name="include_checkbox_state">false</boolProp>
         <boolProp name="exclude_checkbox_state">false</boolProp>
         <collectionProp name="COMPOSITE_CFG">
-          <collectionProp name=""/>
-          <collectionProp name=""/>
+          <collectionProp name="">
+            <stringProp name="-243013315">jp@gc - Response Times Over Time</stringProp>
+            <stringProp name="512357779">jp@gc - Response Latencies Over Time</stringProp>
+            <stringProp name="1329124940">jp@gc - Connect Times Over Time</stringProp>
+          </collectionProp>
+          <collectionProp name="">
+            <stringProp name="1632152058">Modify Client Script</stringProp>
+            <stringProp name="1632152058">Modify Client Script</stringProp>
+            <stringProp name="1632152058">Modify Client Script</stringProp>
+          </collectionProp>
         </collectionProp>
       </kg.apc.jmeter.vizualizers.CompositeResultCollector>
       <hashTree/>
